@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <title>Web Standard Basics</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+  background-color: rgb(105, 205, 238);
+}
+
+h1 {
+  color: rgb(128, 26, 0);
+  margin-left: 40px;
+} 
+
+ h2 {color:rgb(94, 117, 9) }
+
+ h3 {color: blueviolet;}
+
+
+h4{color: crimson;}
+
+a{color: grey ;}
+
+p{color: rgb(176, 83, 16);}
+
+#list1 {
+  text-align: center;
+  color: rgb(3, 117, 62);
+}
+
+.textcenter {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+</style>
+</head>
+<body>
+    <header>
+    <h1 class="textcenter">Intro to Web Standards</h1>
+
+    <h2> Labs 1 and 2 </h2>
+
+    <em>Published on September 22, 2024 by Ian Spearman</em>
+    </header>
+    
+    <article>
+        <h3> My experience with this project</h3>
+    <p>Creating my first website with HTML was an interesting, albeit intimidating, experience. I knew nothing of
+        web development or what went on under the hood of websites, but after reading the module and looking at 
+        the external resources, it makes a lot more sense. Things are very logical, and structure is king. All of
+        the content of a site can be likened to multiple matryoshka dolls standing next to each other, working in tandem.
+        Working through the code and using the tricks that were taught in class, and also learned from the website, as well as using the validator to 
+        correct the many mistakes that I missed proved to be very satisfying work and quite enjoyable! 
+    </p>
+    </article>
+
+    <article>
+        <h3>My thoughts on css</h3>
+        <p>
+            Additionally, I also started learning the basics of CSS. It is certainly much nicer being able to modify the html that I have written, and adding some color 
+            to what would otherwise be a droll black and white document. Although I didn't use an exceptionally diverse set of modifications, I did learn 
+            how to incorporate css from an external document, as well as internally embedding it within the document
+            itself. I also tried to avoid adding the css modifications directly into the elements with an inline style. Apparently it is 
+            hard to keep things consistent, and it loses the advantages of using a style sheet.
+
+
+
+    
+        </p>
+
+
+    </article>
+   
+    <main>
+    <article>
+    <h3 id="list1">Things that I learned</h3>
+        <ol>
+            <li>White space does not matter for HTML, which is similar to other markup languages, like XML. </li>
+            <li>The difference between semantic elements and non-semantic elements: Semantic clearly defines its content, while Non-Semantic does not!</li>
+            <li>You must define the language for your HTML document, and you must also make sure that you are using the correct character encoding. Otherwise
+                the document will not know for sure how to correctly display the characters that you write, leading to unintended side effects (bugs).  
+            </li>
+            <li>Attention to detail is very important! Sometimes things will not work and you won't know why, which happened to me. When I was creating the 
+                links for the websites that helped me, I accidentally had it written so that my copyright was included in the hyperlink and I couldn't figure out why.
+                It wasn't until I looked through the line letter to letter that I saw that I forgot to close the 
+                a href=""  tag.
+            </li>
+            <li>Footer tags must never be placed after the body tag!</li>
+        </ol>
+    </article>
+
+    <article>
+
+        <h4>I had a lot of help on this project from these websites:</h4>
+        <ul>
+        <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"> HTML Semantic Elements</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"> Creating hyperlinks</a></li>
+        <li><a href="https://www.w3schools.com/css/css_syntax.asp"> CSS Syntax</a></li>
+        <li><a href="https://www.w3schools.com/css/css_howto.asp"> How To Add CSS</a></li>
+        <li><a href="https://www.w3schools.com/html/html_css.asp">HTML Styles - CSS</a></li>
+        </ul>
+     </article>
+    
+    </main>
+
+<footer>
+    <p>&copy; 2024 Ian Spearman. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>

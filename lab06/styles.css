@@ -9,7 +9,7 @@ main {
     max-width: 1800px;
     min-width: 800px;
     min-height: 100%;
-    border: 0.1cm groove;
+    border: 0.05cm solid;
     background-color: rgb(212, 212, 225);
     padding: 1cm 2cm 2cm 2cm;
     margin: auto;

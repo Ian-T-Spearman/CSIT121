@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em
+            width:100%;
+            font-family:verdana, sans serif;
+        
+        }
+
+        thead th{
+            background-color: aqua;
+            text-align:left;
+            border-bottom: 1px solid;
+            border-top:1px solid;
+            border-left:1px solid;
+        }
+
+        tr{
+            border-bottom: 1px solid;
+        
+        }
+
+        td{
+            border-right: 1px solid;
+            border-left:1px solid;
+        
+        }
+        
+
+
+        th{
+            border-right: 1px solid;
+        }
+
+        tbody{
+            border-right: 1px solid;
+        }
+
+    textarea{
+    height:200px;
+    width:400px;
+}
+
+main{
+    border:1px solid;
+    margin:20px 20px
+    padding:1em;
+    background-color:rgb(245, 245, 245);
+}
+
+form{
+    font-family: Arial, sans-serif;
+    margin 0 auto 20px;
+    padding: 20px;
+    border:1px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+    </style>
+
+</head>
+<body>
+    
+<header>
+    <h1>Class Schedule Fall 2024</h1>
+</header>
+
+<main>
+    <table> 
+        <thead>
+        <tr>
+         
+         <th>Course Number</th>
+         <th>Course Name</th>
+         <th>Instructor Name</th>
+         </tr>
+         </thead>
+
+         <tbody>
+         <tr>
+            <td>CSIT121</td>
+            <td>Web Standards</td>
+            <td>Professor Veronica Noone</td>
+           </tr>
+
+           <tr>
+            <td>CSIT101</td>
+            <td>Technology & Info Systems</td>
+            <td>Professor Veronica Noone</td>
+           </tr>
+
+           <tr>
+            <td>DCOM101</td>
+            <td>Introduction to Data Communications</td>
+            <td>Professor Eric Ward</td>
+           </tr>
+        </tbody>
+
+</table>
+
+
+<form>
+<div>
+    <label for="email" > Email:</label>
+    <input type="text" id="email" name="email" placeholder="skinnylegend@gmail.com" required>
+</div>
+
+<br>
+
+<div>
+    <label for="phone" > Phone:</label>
+    <input type="text" id="phone" name="phone" placeholder="(410)-410-4100" required>
+</div>
+
+
+        <div>
+            <label for="comments">Comments:</label>
+
+           <div>
+                <textarea id="comments" name="comments" maxlength="1600"></textarea>
+        
+            </div>
+
+            <br>
+
+
+            <div>
+                <input type="reset">
+            </div>
+
+            <br>
+
+
+
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+
+  <footer>
+   <p> ©2024 Ian Spearman CSIT121</p>
+   
+
+
+   <p>Contact: Iotspearman@gmail.com</p>
+ </footer>
+
+
+
+</body>
+</html>

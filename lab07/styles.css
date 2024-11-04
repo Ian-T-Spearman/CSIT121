@@ -1,0 +1,155 @@
+
+body{
+    font-family: 'verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    width:50%;
+    border:0.05cm solid; 
+    background-color: rgb(207, 229, 207);
+    padding:1cm 2cm 2cm  1cm;
+    margin:auto;
+}
+
+nav {
+    border: 0.05cm solid;
+    background-color: rgb(106, 245, 168);
+    width: 55%;
+    margin:auto;
+    font-size: 30px;
+    color: #000000;
+    padding:px;
+    
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin:auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #;
+    text-align: center;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    
+    background-color: rgb(230, 230, 237);
+}
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid;
+    border-width:
+    margin: 0 auto;
+    background-color:  rgb(230, 230, 237);
+
+
+   
+}
+
+
+h3{
+    font-size: 150%;
+}
+
+table {
+    border-collapse:collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:0.9em;
+    min-width: 400px;
+    border:20cm ;
+    padding: ;
+}
+
+.content-table th {
+    background-color: aqua;
+    text-align: left;
+    font-weight: bold;
+ 
+}
+
+
+tr{
+    margin: 25px ;
+    font-size: 30px;
+    border-left: 2px solid;
+
+}
+
+td{
+    padding: 10px 15px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+} 
+
+
+th {
+    padding: 10px;
+    border-bottom:2px solid;
+    border-top: 2px solid;
+    border-left:2px solid;
+    padding-left: 2px;
+    border-right: 2px solid;
+
+}
+
+
+
+ tbody tr:nth-child(1){
+    background-color: red;
+}
+
+tbody tr:nth-child(2){
+    background-color: orange;
+}
+
+tbody tr:nth-child(3){
+    background-color: rgb(227, 227, 152);
+}
+
+tbody tr:nth-child(4){
+    background-color: yellow;
+}
+
+tbody tr:nth-child(5){
+    background-color: rgb(4, 193, 4);
+}
+
+tfoot tr:nth-child(1){
+    background-color: rgb(4, 193, 4);
+}
+
+
+form{
+    background:  ;
+    border:8px;
+    width: 100%;
+
+}
+
+textarea{
+    height:200px;
+    width:400px;
+}

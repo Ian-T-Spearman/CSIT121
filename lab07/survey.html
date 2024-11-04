@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Lab07: Table and Form Lab</h1>
+
+    
+
+<main>
+
+
+  <h2>LoL Survey Form</h2>
+    <nav>
+
+        <ul>
+            <li><a href="tierlist.html">Tierlist</a></li>
+            <li><a href="survey.html">Survey</a></li>
+        </ul>
+
+    </nav>
+
+<br>
+
+    <form id="survey">
+        <div>
+            <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email" > Email:</label>
+            <input type="text" id="email" name="email" placeholder="johndoe@gmail.com" required>
+        </div>
+
+        <br>
+
+
+        <br>
+
+        <div>
+            <label>Do you play League of Legends?</label>
+
+            <br>
+
+            <label for="play-yes">Yes</label>
+            <input type="radio" id="play-yes" name="play" value="Yes">
+
+            <label for="play-no">No</label>
+            <input type="radio" id="play-no" name="play" value="No">
+
+        </div>
+
+
+        <br>
+
+
+        <div>
+         <label for="role"> What Role do you play?</label>
+             <select id="role" name="role">
+                 <option value="Top">Top</option>
+                 <option value="Jungle">Jungle</option>
+                 <option value="Middle">Middle</option>
+                 <option value="ADC">ADC</option>
+                 <option value="Support">Support</option>
+
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="player">How long have you been playing League of Legends?</label>
+            <select id="player" name="player"> 
+                <option value="Season 14">Season 14</option>
+                <option value="Season 13">Season 13</option>
+                <option value="Season 12">Season 12</option>
+                <option value="Season 11">Season 11</option>
+                <option value="Season 10">Season 10</option>
+                <option value="Season 9">Season 9</option>
+                <option value="Season 8">Season 8</option>
+                <option value="Season 7">Season 7</option>
+                <option value="Before Season 7">Before Season 7 </option>
+
+            </select>
+
+        </div>
+
+
+        <br>
+
+
+        <div>
+            <label for="comments">Comments:</label>
+
+           <div>
+                <textarea id="comments" name="comments"></textarea>
+        
+            </div>
+
+
+
+        </div>
+
+
+
+
+        
+        <br>
+
+
+        <div>
+            <input type="submit">
+        </div>
+
+
+
+
+    </form>
+</main>
+    <script>
+        document.getElementById('survey').addEventListener('submit', function(event) {
+            event.preventDefault(); //stop the browser from submitting the form because this script is handling it. 
+
+            //all the following code get the info from the form and puts it in a constant
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const play = document.querySelector('input[name="play"]:checked').value;
+            const role = document.getElementById('role').value;
+            const player = document.getElementById('player').value;
+            const comments = document.getElementById('comments').value;
+
+            //put all the form info into a one long string
+            const data = `Name: ${name}\nEmail: ${email}\nPlays the game: ${play}\nFavorite role: ${role}\nTime Playing: ${player}\nComments: ${comments}`;
+            
+            //The remaining code is used to create and download a text file from the browser - see comments after each line
+            const blob = new Blob([data], { type: 'text/plain' }); //create a blob object and put all the data in it
+            const url = URL.createObjectURL(blob); //create a temp URL to reference the blob
+            const a = document.createElement('a'); //dynamically create an anchor tag
+            a.href = url; //use the blog URL you generated for the dynamically created anchor tag
+            a.download = 'form-data-from-' + name + '.txt'; //create the file name that will be used
+            a.click(); //simulate the clicking of the anchor tag your created 
+            URL.revokeObjectURL(url); //dump the temporary URL - it's no longer needed. 
+        });
+    
+    </script>
+    
+</body>
+</html>

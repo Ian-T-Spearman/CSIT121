@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/lol_background.jpg');
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+main {
+    width: 15%;
+    max-width: 1600px;
+    min-width: 800px;
+    min-height: 100%;
+    border: 0.2cm groove;
+    background-color: lavender;
+    padding: 0cm 1cm 20cm 1cm;
+    margin: auto;
+
+}
+
+h1 {
+    text-align: center;
+    color: #7a4141;
+
+
+}
+
+h2 {
+    font-size: 200%;
+    color:purple
+
+}
+
+h3 {
+    font-size: 175%;
+    color:rgb(249, 85, 85)
+
+}
+
+p {
+    font-size: 125%;
+    
+
+}
+
+.li{
+    padding: 8px 0;
+    border-bottom: px solid #ccc;
+
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+ul li{
+    text-decoration: none;
+}
+
+li {
+
+    padding: 8px 0;
+    border-bottom: 2px solid #bca5a5;
+    
+}
+
+img{
+    border: 3px solid gray;
+}
+
+a{
+    text-decoration: none;
+    color:blue;
+
+}
+
+a:hover{
+    color: #f1f1f1;
+
+}
+
+footer {
+    color: #90ba90;
+
+}
+
+
+.sidenav {
+    box-sizing: border-box;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: lavender;
+    border: 0.1cm groove;
+    overflow-x: hidden;
+    padding-top: 60px;
+    padding-left: px;
+    transition: 0.3s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    margin-left:10px;
+    font-size: 25px;
+    color: rgb(249, 85, 85);
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 46px;
+    margin-left: 55px;
+}
+
+
+span{
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+    margin: 10px 10px 50px 151px;
+    padding: 6px ;
+    color:#100f0f;
+    background-color:#f1f1f1;
+    border:0.05cm solid;
+    border-radius: 8px ;
+
+}

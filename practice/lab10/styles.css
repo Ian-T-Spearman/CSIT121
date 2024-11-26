@@ -1,0 +1,135 @@
+body {
+    width: auto;
+    height: auto;
+    background-image: url('images/');
+    
+
+  
+  }
+
+main {
+    width: 25%;
+    max-width: 1800px;
+    min-width: 800px;
+    min-height: 100%;
+    border: 0.05cm solid;
+    border-radius: 10px;
+    background-color: #A8E6CF;
+    padding: 1cm 2cm 2cm 2cm;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+
+
+}
+
+nav {
+    border: 0.05cm solid;
+    border-radius: 33px;
+    width: 50%;
+    max-width: 1800px;
+    min-width: 800px;
+    font-size: 22px;
+    color: #000000;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 10px auto;
+    
+    
+    
+
+}
+
+
+
+nav ul {
+
+    list-style-type: none;
+    margin:auto;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #222;
+    text-align: center;
+    border-radius: 32px;
+    
+
+
+}
+
+nav ul li{
+    
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+    margin: 2px 8px 8px 16px
+    
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    
+    background-color: rgb(239, 239, 247);
+
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+    text-align: center;
+    padding: 2px 16px 2px 16px;
+    margin: 10px auto;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+
+
+}
+
+h2{
+    border: 0.05cm solid black;
+    border-radius: 10px;
+    border-width: 2px;
+    display: inline-block;
+    padding: 4px;
+    color:azure;
+    background-color: #555;;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+h3 {
+    border: 0.10cm solid;
+    padding: 6px;
+    font-size: 200%;
+    color:rgb(83, 131, 232);
+    text-align: center;
+
+}
+
+p {
+    font-size: 135%;
+    
+
+}
+
+
+header{
+    text-align: center;
+    background-color: #666;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 80%;
+    margin: 8px auto;
+
+}
+
+footer{
+    background-color: #333;
+    
+}

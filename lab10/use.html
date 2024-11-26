@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+       <div>
+
+        <h1>SPARQL 1.1</h1>
+
+       </div>   
+
+
+      <div> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="importance.html">Importance</a></li>
+                <li><a href="use.html">Use</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <br>
+
+    </header>
+
+    <br>
+
+    <main>
+        <article>
+            <h2>What can you use SPARQL for? </h2>
+
+            <p>SPARQL is mainly used for complex querying across RDF datasets, which includes filtering results, aggregating data, and combining different datasets.
+                Although this is the main function of SPARQL, it can also be used update RDF databases and change the data that is stored, which is useful for more dynamic
+                datasets. While also being very useful for machine learning, SPARQL is useful for linking data across datasets, which can allow for queries from different places
+                on the web at the same time.
+            </p>
+
+        </article>
+
+        <article>
+            <h2>Main types of Queries: </h2>
+
+            <p>
+                There are many different types of queries available to use in SPARQL, however the most commonly used are:
+            </p>
+
+            <div>
+                <ol>
+                    <li>SELECT: Select matches found in a data graph.</li>
+                    <li>ASK: Ask if there is a match found in the dataset from the query.</li>
+                    <li>CONSTRUCT: Create new data from the existing data.</li>
+                    <li>DESCRIBE:Creates an RDF graph that 'Describes' the data.</li>
+                </ol>
+                
+            </div>
+            
+        </article>
+
+        <article>
+            <h2>SPARQL Query Example </h2>
+
+            <div>
+            <p>SELECT ?subject ?predicate ?object
+                <br>WHERE {
+                  ?subject ?predicate ?object .
+                }
+            </p>
+            </div>
+
+            <div>
+                <p>
+                    This is the template for a basic query, which when filled out would look something like:<br>
+                    SELECT ?personName ?cityName
+                    <br>WHERE {
+                      ?person rdf:type ex:Person .
+                      ?person ex:hasName ?personName .
+                      ?city ex:hasName ?cityName.  
+                    }
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    This query searches the data and finds matches based off the links between 'Person' and 'City'.
+                </p>
+            </div>
+            
+        </article>
+
+
+
+    </main>
+    
+    <br>
+
+    <footer> <em>©2024 Ian Spearman. All rights Reserved. </em></footer>
+
+
+</body>
+</html>
